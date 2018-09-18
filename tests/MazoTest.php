@@ -16,13 +16,13 @@ class MazoTest extends TestCase {
 
     public function testMezclable() {
         $mazo = new Mazo([0,1,2,3,4,5,6]);
-	$primero = $mazo->primero();
-	$ultimo = $mazo->ultimo();
+	$mazoViejo = $mazo->getCartas();
+
 
         $this->assertTrue($mazo->mezclar());
 	
-	$this->assertNotEquals($primero, $mazo->primero());
-	$this->assertNotEquals($ultimo, $mazo->ultimo());
+	$this->assertNotEquals($mazoViejo, $mazo->getCartas());
+
     }
 
 
