@@ -14,13 +14,9 @@ class Mazo {
     return TRUE;
   }
 
-	public function primero() {
-		return $this->cartas[0];
-  }
+	public function getCartas() {
+		return $this->cartas;
 
-	public function ultimo() {
-		return array_reverse($this->cartas)[0];
-  }
 
 
 }
