@@ -9,14 +9,14 @@ class Mazo {
 		$this->cartas = $array;	
 	}
 
-  public function mezclar() {
+	public function mezclar() {
 		shuffle($this->cartas);
-    return TRUE;
-  }
+	return TRUE;
+	}
 
 	public function getCartas() {
 		return $this->cartas;
-
+	}
 
 
 }
