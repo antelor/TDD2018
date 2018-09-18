@@ -25,5 +25,23 @@ class MazoTest extends TestCase {
 
     }
 
+    public function testCortarPar() {
+	$mazo = new Mazo([0,1,2,4]);
+	list($uno, $dos) = $mazo->cortar();
+	
+	$this->assertEquals( count($uno), count($mazo)/2 );
+	$this->assertEquals( count($dos), count($mazo)/2 );
+	$this->assertEquals( count($uno), count($dos) );
+    }
+
+    public function testCortarImpar() {
+	$mazo = new Mazo([0,1,2,4,5]);
+	list($uno, $dos) = $mazo->cortar();
+	
+	$this->assertEquals( count($uno), floor(count($mazo)/2)+1 );
+	$this->assertEquals( count($dos), floor(count($mazo)/2) );
+	$this->assertEquals( count($uno), count($dos)+1 );
+    }
+
 
 }
