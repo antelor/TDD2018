@@ -19,7 +19,7 @@ class MazoTest extends TestCase {
 	    $mazoViejo = $mazo->getCartas();
 
         $this->assertTrue($mazo->mezclar());
-        
+
 	    $this->assertNotEquals($mazoViejo, $mazo->getCartas());
     }
 
@@ -36,6 +36,6 @@ class MazoTest extends TestCase {
 
         $mazo2 = new Mazo([]);
 
-        $this->assertFalse( $mazo->hayCartas() );
+        $this->assertFalse( $mazo2->hayCartas() );
     }
 }
