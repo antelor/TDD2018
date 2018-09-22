@@ -36,5 +36,7 @@ class Mazo {
 
 			$this->cartas = $submazo1 + $submazo2;
 		}
+
+		return TRUE;
 	}
 }
