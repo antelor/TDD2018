@@ -11,7 +11,7 @@ class Mazo {
 
 	public function mezclar() {
 		shuffle($this->cartas);
-	return TRUE;
+		return TRUE;
 	}
 
 	public function getCartas() {

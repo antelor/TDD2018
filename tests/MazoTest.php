@@ -38,4 +38,13 @@ class MazoTest extends TestCase {
 
         $this->assertFalse( $mazo2->hayCartas() );
     }
+
+    public function testCortar() {
+        $mazo = new Mazo([0,1,2,3,4]);
+        $mazoViejo = $mazo->getCartas();
+
+        $this->assertTrue( $mazo->cortar() );
+
+        $this->assertNotEquals( $mazoViejo, $mazo->getCartas() );
+    }
 }
