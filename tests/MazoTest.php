@@ -30,4 +30,14 @@ class MazoTest extends TestCase {
         
         $this->assertEquals($mazo->cantCartas(), 4);
     }
+
+    public function testHayCartas() {
+        $mazo = new Mazo([0,1,2,4]);
+
+        $this->assertTrue( $mazo->hayCartas() );
+
+        $mazo2 = new Mazo([]);
+
+        $this->assertFalse( $mazo->hayCartas() );
+    }
 }
