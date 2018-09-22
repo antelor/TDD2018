@@ -56,5 +56,8 @@ class MazoTest extends TestCase {
 
         $this->assertTrue( $mazo->agregar(2) );
         $this->assertEquals( $mazo->cantCartas(), 3 );
+
+        $this->assertTrue( $mazo->agregar([3,4]) );
+        $this->assertEquals( $mazo->cantCartas(), 5 );
     }
 }
