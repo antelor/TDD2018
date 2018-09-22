@@ -47,4 +47,15 @@ class MazoTest extends TestCase {
 
         $this->assertNotEquals( $mazoViejo, $mazo->getCartas() );
     }
+
+    //Nota: agregar funciona con elementos individuales o con arrays de elementos 
+    public function agregar(){
+        $mazo = new Mazo([0,1]);
+
+        $this->assertTrue( $mazo->agregar(2) );
+        $this->assertEquals( $mazo->cantCartas(), 3 );
+
+        $this->assertTrue( $mazo->agregar([3,4]) );
+        $this->assertEquals( $mazo->cantCartas(), 5 );
+    }
 }
