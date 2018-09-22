@@ -23,6 +23,6 @@ class Mazo {
 	}
 
 	public function hayCartas() {
-		return ( $this->cantCartas > 0 );
+		return ( $this->cantCartas() > 0 );
 	}
 }
