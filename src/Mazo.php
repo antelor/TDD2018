@@ -38,4 +38,8 @@ class Mazo {
 		}
 		return TRUE;
 	}
+
+	public function agregar($elems){
+		array_push( $this->cartas, $elems);
+	}
 }
