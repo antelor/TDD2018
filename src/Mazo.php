@@ -39,14 +39,9 @@ class Mazo {
 		return TRUE;
 	}
 
-	public function agregar($elems){
-		if(is_array($elems)){
-			array_push($this->cartas, $elems);
-		}
-		else{
-			$this->cartas[] = $elems;
-		}
-		
+	public function agregar($elem){
+		$this->cartas[] = $elem;
+
 		return TRUE;
 	}
 }
