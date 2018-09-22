@@ -18,5 +18,7 @@ class Mazo {
 		return $this->cartas;
 	}
 
-
+	public function cantCartas() {
+		return count( $this->getCartas() );
+	}
 }
