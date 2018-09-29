@@ -2,7 +2,7 @@
 
 namespace TDD;
 
-class Mazo {
+class CartaSpanish implements CartaInterface{
     protected $numero;
     protected $palo;
     protected $numerosPermitidos;

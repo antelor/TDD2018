@@ -2,7 +2,7 @@
 
 namespace TDD;
 
-class Mazo {
+class CartaPoker implements CartaInterface{
     protected $numero;
     protected $palo;
     protected $numerosPermitidos;
@@ -19,7 +19,7 @@ class Mazo {
         else{
             return FALSE;
         }
-        
+
         return TRUE;
     }
     
