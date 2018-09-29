@@ -1,6 +1,7 @@
 <?php
 
 namespace TDD;
+use Exception;
 
 use PHPUnit\Framework\TestCase;
 

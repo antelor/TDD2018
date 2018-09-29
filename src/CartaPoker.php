@@ -1,6 +1,7 @@
 <?php
 
 namespace TDD;
+use Exception;
 
 class CartaPoker implements CartaInterface{
     protected $numero;

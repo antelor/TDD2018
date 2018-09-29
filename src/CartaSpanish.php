@@ -1,6 +1,7 @@
 <?php
 
 namespace TDD;
+use Exception;
 
 class CartaSpanish implements CartaInterface{
     protected $numero;
