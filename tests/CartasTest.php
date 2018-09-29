@@ -6,18 +6,26 @@ use PHPUnit\Framework\TestCase;
 
 class CartasTest extends TestCase {
     public function testCrear() {
+        //Cartas espanolas
         $cartaE = new CartaSpanish(12, 'basto');
         $this->assertTrue(isset($cartaE));
+        
+        try {
+            $cartaE2 = new CartaSpanish(13, 'asdg');
+        }
+        catch(Exception $e) {
+            $this->assertTrue( isset($e) );
+        }
 
-        $cartaE2 = new CartaSpanish(13, 'asdg');
-        $this->assertFalse($cartaE2);
-
+        //Cartas poker
         $cartaP = new CartaSpanish(5, 'treboles');
         $this->assertTrue(isset($cartaP));
 
-        $cartaP2 = new CartaSpanish(13, 'asdg');
-        $this->assertFalse($cartaP2);
-
+        try {
+            $cartaP2 = new CartaSpanish(13, 'asdg');
+        }
+        catch(Exception $e2) {
+            $this->assertTrue( isset($e2) );
+        }
     }
-
 }
