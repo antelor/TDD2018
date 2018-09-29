@@ -10,14 +10,14 @@ class CartasTest extends TestCase {
         $this->assertTrue(isset($cartaE));
 
         $cartaE2 = new CartaSpanish(13, 'asdg');
-        $this->assertFalse(isset($cartaE2));
+        $this->assertFalse($cartaE2);
 
         $cartaP = new CartaSpanish(5, 'treboles');
         $this->assertTrue(isset($cartaP));
 
         $cartaP2 = new CartaSpanish(13, 'asdg');
-        $this->assertFalse(isset($cartaP2));
-        
+        $this->assertFalse($cartaP2);
+
     }
 
 }
