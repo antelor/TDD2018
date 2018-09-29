@@ -23,7 +23,7 @@ class CartaSpanish implements CartaInterface{
         return TRUE;
     }
     
-    public function getNum(){
+    public function getNumero(){
         return TRUE;
     }
 
