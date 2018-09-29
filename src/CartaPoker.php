@@ -12,7 +12,7 @@ class CartaPoker implements CartaInterface{
         $this->numerosPermitidos = ['A', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K'];
         $this->palosPermitidos = ['corazones', 'diamantes', 'treboles', 'picas'];
     
-        if( in_array($num, $this->numerosPermitidos) && in_array($palo, $this->palosPermitidos) ){
+        if( in_array($numero, $this->numerosPermitidos) && in_array($palo, $this->palosPermitidos) ){
             $this->numero = $numero;
             $this->palo = $palo;
         }
