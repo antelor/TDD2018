@@ -17,6 +17,7 @@ class CartasTest extends TestCase {
 
         $cartaP2 = new CartaSpanish(13, 'asdg');
         $this->assertFalse(isset($cartaP2));
+        
     }
 
 }
