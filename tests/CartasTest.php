@@ -29,7 +29,7 @@ class CartasTest extends TestCase {
             $this->assertTrue( isset($e2) );
         }
     }
-    public funciton testGet(){
+    public function testGet(){
         //Cartas españolas
         $cartaE = new CartaSpanish(12, 'basto');
         $this->assertEquals($cartaE->getNumero(), 12);
