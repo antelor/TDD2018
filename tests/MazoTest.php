@@ -55,7 +55,7 @@ class MazoTest extends TestCase {
     }
 
     public function testElegir(){
-        $mazo = new Mazo([0,1,2,3,4])
+        $mazo = new Mazo([0,1,2,3,4]);
         $this->assertEquals($mazo->elegirCarta(3), 2);
     }
 }
