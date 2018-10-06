@@ -24,10 +24,10 @@ class CartaSpanish implements CartaInterface{
     }
     
     public function getNumero(){
-        return TRUE;
+        return $this->numero;
     }
 
     public function getPalo(){
-        return TRUE;
+        return $this->palo;
     }
 }
