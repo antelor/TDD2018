@@ -44,4 +44,8 @@ class Mazo {
 
 		return TRUE;
 	}
+
+	public function elegirCarta($index = rand(0, this->cantCartas()-1)){
+		return TRUE;
+	}
 }
