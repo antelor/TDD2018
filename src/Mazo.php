@@ -46,7 +46,7 @@ class Mazo {
 	}
 
 	public function elegirCarta($index = -1){
-		if ($index = -1){
+		if ($index == -1){
 			$index = rand(0, $this->cantCartas() - 1);
 		}
 		else{
