@@ -45,7 +45,18 @@ class Mazo {
 		return TRUE;
 	}
 
-	public function elegirCarta($index = rand(0, this->cantCartas()-1)){
-		return TRUE;
+	public function elegirCarta($index = -1){
+		if ($index = -1){
+			$index = rand(0, $this->cantCartas() - 1);
+		}
+		else{
+			$index = $index - 1;
+		}
+		if ($index >= 0 && $index < $this->cantCartas()){
+			return $this->cartas[$index];
+		}
+		else{
+			throw new Exception ("La posicion de la carta seleccionada no está disponible para este mazo");
+		}
 	}
 }
