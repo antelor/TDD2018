@@ -6,6 +6,8 @@ use Exception;
 class CartaPoker implements CartaInterface {
     protected $numero;
     protected $palo;
+    protected $numerosPermitidos;
+    protected $palosPermitidos;
     
     public function __construct($numero, $palo) {
         $this->numerosPermitidos = ['A', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K'];
