@@ -6,6 +6,10 @@ use Exception;
 use PHPUnit\Framework\TestCase;
 
 class CartasTest extends TestCase {
+
+    /**
+     * Comprueba que es posible crear cartas solo con los numeros y palos correctos para cada tipo de carta
+     */
     public function testCrear() {
         //Cartas espanolas
         $cartaE = new CartaSpanish(12, 'basto');
@@ -29,6 +33,10 @@ class CartasTest extends TestCase {
             $this->assertTrue( isset($e2) );
         }
     }
+
+    /**
+     * Comprueba que es posible recuperar el numero y palo de una carta con las funciones getNumero y getPalo respectivamente
+     */
     public function testGet(){
         //Cartas españolas
         $cartaE = new CartaSpanish(12, 'basto');
