@@ -5,7 +5,7 @@ namespace TDD;
 class Mazo {
 	protected $cartas;
 
-	public function __construct($array){
+	public function __construct($array) {
 		$this->cartas = $array;	
 	}
 
@@ -19,19 +19,19 @@ class Mazo {
 	}
 
 	public function cantCartas() {
-		return count( $this->getCartas() );
+		return count($this->getCartas());
 	}
 
 	public function hayCartas() {
-		return ( $this->cantCartas() > 0 );
+		return ($this->cantCartas() > 0);
 	}
 
-	public function cortar(){
-		if( $this->hayCartas() ){
+	public function cortar() {
+		if ($this->hayCartas()) {
 			$mazo = $this->getCartas();
-			$randint = rand(1, $this->cantCartas()-1 );
+			$randint = rand(1, $this->cantCartas() - 1);
 
-			$submazo1 = array_slice($mazo, 0, $randint-1);
+			$submazo1 = array_slice($mazo, 0, $randint - 1);
 			$submazo2 = array_slice($mazo, $randint);
 
 			$this->cartas = $submazo1 + $submazo2;
@@ -39,17 +39,17 @@ class Mazo {
 		return TRUE;
 	}
 
-	public function agregar($elem){
+	public function agregar($elem) {
 		$this->cartas[] = $elem;
 
 		return TRUE;
 	}
 
-	public function elegirCarta($index = -1){
-		if ($index == -1){
+	public function elegirCarta($index = -1) {
+		if ($index == -1) {
 			$index = rand(0, $this->cantCartas() - 1);
 		}
-		else{
+		else {
 			$index = $index - 1;
 		}
 
