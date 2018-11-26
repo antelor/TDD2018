@@ -52,11 +52,7 @@ class Mazo {
 		else{
 			$index = $index - 1;
 		}
-		if ($index >= 0 && $index < $this->cantCartas()){
-			return $this->cartas[$index];
-		}
-		else{
-			throw new Exception ("La posicion de la carta seleccionada no está disponible para este mazo");
-		}
+
+		return $this->cartas[$index];
 	}
 }

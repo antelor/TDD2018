@@ -60,10 +60,5 @@ class MazoTest extends TestCase {
 
         $this->assertNotEquals($mazo->elegirCarta(), NULL);
 
-        try {
-            $mazo->elegirCarta(-2);
-        } catch (Exception $ex) {
-            $this->assertEquals($ex->getMessage(), "Exception message");
-        }
     }
 }
