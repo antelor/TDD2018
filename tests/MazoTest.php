@@ -57,5 +57,13 @@ class MazoTest extends TestCase {
     public function testElegir(){
         $mazo = new Mazo([0,1,2,3,4]);
         $this->assertEquals($mazo->elegirCarta(3), 2);
+
+        $this->assertNotEquals($mazo->elegirCarta(), NULL);
+
+        try {
+            $mazo->elegirCarta(-2);
+        } catch (Exception $ex) {
+            $this->assertEquals($ex->getMessage(), "Exception message");
+        }
     }
 }
